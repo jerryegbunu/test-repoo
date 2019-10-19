@@ -1,6 +1,23 @@
-<style>
-	#cas{color:blue;}
-</style>
-<h1> just trying out github</h1>
-<p id = "cas"> this is my first test paragraph</p>
-<h2>lenox code</h2>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  </head>
+  <body>
+	<p id="jaylen"></p>  
+	<p id="area"></p>  
+	<script type="text/javascript" src="functions.js"></script>
+	<script type="text/javascript" src="objects.js"></script>
+	<script type="text/javascript">
+		function Test() {
+			JaylenObject["age"] = 2
+			JaylenObject["color"] = 'Brown'
+			JaylenObject["weight"] = '30lbs'
+			document.getElementById('jaylen').innerHTML = Jaylen(JaylenObject);
+			document.getElementById('area').innerHTML = area(2, 4);
+		}
+		window.onload = Test();
+	</script>
+  </body>
+</html>
